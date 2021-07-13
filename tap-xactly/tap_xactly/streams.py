@@ -130,23 +130,23 @@ class XcPosTitleAssignmentHist(
     valid_replication_keys = ["MODIFIED_DATE"]
     replication_key = "MODIFIED_DATE"
 
+# THESE NEED FIXED DUE TO THE QUERY
+# class XcAttainmentMeasure(IncrementalStream):  # pylint: disable=too-few-public-methods
+#     tap_stream_id = "xc_attainment_measure"
+#     key_properties = ["ATTAINMENT_MEASURE_ID"]
+#     object_type = "XC_ATTAINMENT_MEASURE"
+#     valid_replication_keys = ["MODIFIED_DATE"]
+#     replication_key = "MODIFIED_DATE"
 
-class XcAttainmentMeasure(IncrementalStream):  # pylint: disable=too-few-public-methods
-    tap_stream_id = "xc_attainment_measure"
-    key_properties = ["ATTAINMENT_MEASURE_ID"]
-    object_type = "XC_ATTAINMENT_MEASURE"
-    valid_replication_keys = ["MODIFIED_DATE"]
-    replication_key = "MODIFIED_DATE"
 
-
-class XcAttainmentMeasureCriteria(
-    IncrementalStream
-):  # pylint: disable=too-few-public-methods
-    tap_stream_id = "xc_attainment_measure_criteria"
-    key_properties = ["ATTAINMENT_MEASURE_CRITERIA_ID"]
-    object_type = "XC_ATTAINMENT_MEASURE_CRITERIA"
-    valid_replication_keys = ["MODIFIED_DATE"]
-    replication_key = "MODIFIED_DATE"
+# class XcAttainmentMeasureCriteria(
+#     IncrementalStream
+# ):  # pylint: disable=too-few-public-methods
+#     tap_stream_id = "xc_attainment_measure_criteria"
+#     key_properties = ["ATTAINMENT_MEASURE_CRITERIA_ID"]
+#     object_type = "XC_ATTAINMENT_MEASURE_CRITERIA"
+#     valid_replication_keys = ["MODIFIED_DATE"]
+#     replication_key = "MODIFIED_DATE"
 
 
 class XcCredit(IncrementalStream):  # pylint: disable=too-few-public-methods
